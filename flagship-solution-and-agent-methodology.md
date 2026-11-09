@@ -6,6 +6,8 @@
 
 **Status:** Planning specification. Evaluation cases are defined, not executed.
 
+**Evaluation foundation:** The repository now includes the [58-case catalog and evaluation harness](evals/README.md), eight synthetic development fixtures with exact structured-output checks, harness unit tests, and a credential-free CI workflow. These validate evaluation infrastructure only. Agents, full semantic/runtime suites, LangSmith integration, and measured agent scores remain outstanding.
+
 **Product requirement:** Create an evidence-backed report on a defined research topic, keep it updated daily, and have a dated document ready at the end of each day.
 
 **Access:** Single-user application with no login, account creation, or multi-user system.
