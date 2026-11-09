@@ -1,0 +1,18 @@
+{
+  "case_id": "E26",
+  "version": 1,
+  "provenance": "synthetic",
+  "split": "development",
+  "inputs": {"observations": "relay/acme.json"},
+  "expected_output": {
+    "editions": [
+      {"date": "2026-11-05", "finding": {"plan": "Enterprise", "evidence": "S01"}, "changes": [], "comparison": "baseline"},
+      {"date": "2026-11-06", "finding": {"plan": "Enterprise", "evidence": "S01"}, "changes": [], "comparison": "unchanged"},
+      {"date": "2026-11-07", "finding": {"plan": "Business", "evidence": "S02"}, "changes": [
+        {"before": "Enterprise", "after": "Business", "evidence": ["S01", "S02"]}
+      ], "comparison": "changed"}
+    ]
+  },
+  "scorer": "exact-json-v1",
+  "limitations": "One company and one retained finding. Full report coverage is tested separately from this structured comparison."
+}

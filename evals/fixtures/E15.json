@@ -1,0 +1,22 @@
+{
+  "case_id": "E15",
+  "version": 1,
+  "provenance": "synthetic",
+  "split": "development",
+  "inputs": {
+    "previous": {
+      "price": 59,
+      "billing_term": "monthly"
+    },
+    "current": {
+      "price": 49,
+      "billing_term": "annual_equivalent"
+    }
+  },
+  "expected_output": {
+    "comparison": "non_equivalent",
+    "events": []
+  },
+  "scorer": "exact-json-v1",
+  "limitations": "Structured contract only; does not establish semantic quality or full case coverage."
+}

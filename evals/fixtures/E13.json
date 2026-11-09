@@ -1,0 +1,19 @@
+{
+  "case_id": "E13",
+  "version": 1,
+  "provenance": "synthetic",
+  "split": "development",
+  "inputs": {
+    "previous": null,
+    "current": {
+      "plan": "Business",
+      "sso": true
+    }
+  },
+  "expected_output": {
+    "comparison": "baseline",
+    "events": []
+  },
+  "scorer": "exact-json-v1",
+  "limitations": "Structured contract only; does not establish semantic quality or full case coverage."
+}

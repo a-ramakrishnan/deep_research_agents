@@ -1,0 +1,26 @@
+{
+  "case_id": "E29",
+  "version": 1,
+  "provenance": "synthetic",
+  "split": "development",
+  "inputs": {
+    "previous_edition_id": "edition-1",
+    "sources": [
+      {
+        "id": "S01",
+        "status": "failed"
+      },
+      {
+        "id": "S02",
+        "status": "failed"
+      }
+    ]
+  },
+  "expected_output": {
+    "published": false,
+    "current_edition_id": "edition-1",
+    "update_status": "failed"
+  },
+  "scorer": "exact-json-v1",
+  "limitations": "Structured contract only; does not establish semantic quality or full case coverage."
+}

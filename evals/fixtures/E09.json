@@ -1,0 +1,18 @@
+{
+  "case_id": "E09",
+  "version": 1,
+  "provenance": "synthetic",
+  "split": "development",
+  "inputs": {
+    "announcement_date": "2026-11-02",
+    "event_date": "2026-11-01",
+    "retrieved_at": "2026-11-05T11:00:00Z"
+  },
+  "expected_output": {
+    "announcement_date": "2026-11-02",
+    "event_date": "2026-11-01",
+    "retrieved_at": "2026-11-05T11:00:00Z"
+  },
+  "scorer": "exact-json-v1",
+  "limitations": "Structured contract only; does not establish semantic quality or full case coverage."
+}
