@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Activity · Relay</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="activity.js"></script>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">RELAY / RESEARCH OPERATIONS</p>
+    <h1>Agent Activity</h1>
+    <p>Follow a research run from source checks to publication.</p>
+  </header>
+  <section class="run" aria-label="Demo run controls">
+    <div><span id="mode" class="badge">Synthetic replay</span><h2>Acme · SSO packaging update</h2><label id="edition-control" hidden>Edition <select id="edition"></select></label> <a id="report" hidden>Open report</a><p id="step-label" aria-live="polite"></p></div>
+    <div class="controls"><button id="replay">Replay</button><label>Run progress <input id="step" type="range" min="0" value="0"></label></div>
+  </section>
+  <div class="grid">
+    <section><h2>Agents</h2><ul id="agents" class="agents"></ul></section>
+    <section><h2>Interactions</h2><ol id="timeline" class="timeline"></ol></section>
+  </div>
+  <section class="evals">
+    <h2>Evaluations</h2>
+    <p id="eval-summary" role="status">Loading evaluation catalog…</p>
+    <label>Filter by role <select id="filter"><option value="">All cases</option></select></label>
+    <ul id="cases" class="cases"></ul>
+  </section>
+</main>
+</body>
+</html>

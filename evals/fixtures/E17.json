@@ -1,0 +1,20 @@
+{
+  "case_id": "E17",
+  "version": 1,
+  "provenance": "synthetic",
+  "split": "development",
+  "inputs": {
+    "previous": {
+      "sso": true
+    },
+    "current": null,
+    "fetch_status": "failed"
+  },
+  "expected_output": {
+    "baseline_advanced": false,
+    "source_health": "failed",
+    "events": []
+  },
+  "scorer": "exact-json-v1",
+  "limitations": "Structured contract only; does not establish semantic quality or full case coverage."
+}

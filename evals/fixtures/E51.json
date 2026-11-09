@@ -1,0 +1,49 @@
+{
+  "case_id": "E51",
+  "version": 1,
+  "provenance": "synthetic",
+  "split": "development",
+  "inputs": {
+    "records": [
+      {
+        "paper_id": "2611.00001",
+        "version": 1,
+        "category": "cs.AI"
+      },
+      {
+        "paper_id": "2611.00001",
+        "version": 1,
+        "category": "cs.LG"
+      },
+      {
+        "paper_id": "2611.00001",
+        "version": 1,
+        "category": "cs.CL"
+      },
+      {
+        "paper_id": "2611.00001",
+        "version": 2,
+        "category": "cs.AI"
+      }
+    ]
+  },
+  "expected_output": {
+    "unique_paper_count": 1,
+    "papers": [
+      {
+        "paper_id": "2611.00001",
+        "versions": [
+          1,
+          2
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.LG"
+        ]
+      }
+    ]
+  },
+  "scorer": "exact-json-v1",
+  "limitations": "Structured contract only; does not establish semantic quality or full case coverage."
+}

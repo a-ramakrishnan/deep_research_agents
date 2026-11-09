@@ -1,0 +1,42 @@
+{
+  "case_id": "E52",
+  "version": 1,
+  "provenance": "synthetic",
+  "split": "development",
+  "inputs": {
+    "window_start": "2026-11-01T00:00:00Z",
+    "window_end": "2026-11-08T00:00:00Z",
+    "papers": [
+      {
+        "id": "start",
+        "submitted": "2026-11-01T00:00:00Z"
+      },
+      {
+        "id": "end",
+        "submitted": "2026-11-08T00:00:00Z"
+      },
+      {
+        "id": "revision",
+        "submitted": "2026-10-01T00:00:00Z",
+        "updated": "2026-11-04T00:00:00Z"
+      },
+      {
+        "id": "late",
+        "submitted": "2026-11-07T00:00:00Z",
+        "indexed": "2026-11-08T01:00:00Z"
+      }
+    ]
+  },
+  "expected_output": {
+    "included_ids": [
+      "late",
+      "start"
+    ],
+    "excluded_ids": [
+      "end",
+      "revision"
+    ]
+  },
+  "scorer": "exact-json-v1",
+  "limitations": "Structured contract only; does not establish semantic quality or full case coverage."
+}

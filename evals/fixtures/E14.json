@@ -1,0 +1,38 @@
+{
+  "case_id": "E14",
+  "version": 1,
+  "provenance": "synthetic",
+  "split": "development",
+  "inputs": {
+    "previous": {
+      "price": 49,
+      "currency": "USD",
+      "billing_term": "monthly",
+      "plan": "Business",
+      "excerpt": "Business costs $49 per month."
+    },
+    "current": {
+      "price": 59,
+      "currency": "USD",
+      "billing_term": "monthly",
+      "plan": "Business",
+      "excerpt": "Business costs $59 per month."
+    }
+  },
+  "expected_output": {
+    "events": [
+      {
+        "attribute": "price",
+        "before": 49,
+        "after": 59,
+        "currency": "USD",
+        "billing_term": "monthly",
+        "plan": "Business",
+        "before_excerpt": "Business costs $49 per month.",
+        "after_excerpt": "Business costs $59 per month."
+      }
+    ]
+  },
+  "scorer": "exact-json-v1",
+  "limitations": "Structured contract only; does not establish semantic quality or full case coverage."
+}
